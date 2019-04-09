@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#0f3b52"
+    android:layout_gravity="center">
+    <!--progress bar-->
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="11dp"
+        android:visibility="gone"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:id="@+id/pBar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:gravity="center"
+        android:text="Sign Up"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:textColor="#fff"
+        android:layout_marginTop="150dp"/>
+
+    <!--first name-->
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:id="@+id/etfname"
+        android:drawableLeft="@drawable/user"
+        android:paddingLeft="10dp"
+        android:drawablePadding="10dp"
+        android:background="@drawable/edit_round"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:hint="First Name"/>
+
+    <!--last name-->
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:id="@+id/etlname"
+        android:drawableLeft="@drawable/user"
+        android:paddingLeft="10dp"
+        android:drawablePadding="10dp"
+        android:background="@drawable/edit_round"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etfname"
+        android:layout_marginTop="10dp"
+        android:hint="Last Name"/>
+
+    <!--email-->
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:id="@+id/etemail1"
+        android:hint="E-mail"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="10dp"
+        android:paddingLeft="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etlname"
+        android:background="@drawable/edit_round"
+        android:layout_marginTop="10dp"
+        android:inputType="textEmailAddress"/>
+
+    <!--password-->
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:id="@+id/etpass1"
+        android:layout_centerHorizontal="true"
+        android:hint="Password"
+        android:drawableLeft="@drawable/password"
+        android:paddingLeft="10dp"
+        android:drawablePadding="10dp"
+        android:layout_below="@+id/etemail1"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_round"
+        android:inputType="textPassword"/>
+
+    <!--Button-->
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:id="@+id/btnsignup"
+        android:layout_below="@+id/etpass1"
+        android:layout_centerHorizontal="true"
+        android:text="Create Account!"
+        android:textSize="18sp"
+        android:layout_marginTop="62dp"
+        android:background="@drawable/loginbtn"
+        android:textAllCaps="false"/>
+    
+    <!--already have an account-->
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/alreadyAc"
+        android:text="Already have an Account? Login"
+        android:textSize="22sp"
+        android:textColor="#fff"
+        android:layout_below="@+id/btnsignup"
+        android:gravity="center"
+        android:layout_marginTop="40dp"/>
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

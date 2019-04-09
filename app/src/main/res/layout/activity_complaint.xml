@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0f3b52"
+    android:gravity="center"
+    tools:context=".ComplaintActivity">
+
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="11dp"
+        android:visibility="gone"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:id="@+id/progbar"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Customer Feedback"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:id="@+id/etfeedback"
+        android:textSize="22sp"
+        android:background="@drawable/edit_rect"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:hint="Enter Your feedback Here.."
+        android:paddingLeft="10dp"
+        android:inputType="textMultiLine"/>
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:text="Submit!"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:id="@+id/btnsubmit"
+        android:background="@drawable/loginbtn"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etpass"
+        android:layout_marginTop="350dp"/>
+
+</RelativeLayout>

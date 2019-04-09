@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddProduct">
+
+    <ScrollView
+        android:layout_width="400dp"
+        android:layout_height="715dp"
+        android:layout_marginStart="2dp"
+        android:fillViewport="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--heading add your product-->
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="Add Your Product"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+            <!--image -->
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/auction_img"
+                android:id="@+id/img"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"/>
+            <!--enter Product name-->
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/NameRapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/Pdname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Product Name"
+                    android:inputType="text"
+                    android:textSize="25sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!--product discription-->
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/DiscriptionRapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/PdDiscription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Product Discription"
+                    android:inputType="textMultiLine"
+                    android:textSize="25sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--default price-->
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/PriceRapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/Pdprice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Default Price"
+                    android:inputType="number"
+                    android:textSize="25sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--Button to save-->
+            <Button
+                android:id="@+id/btnsave"
+                android:layout_width="380dp"
+                android:layout_height="45dp"
+                android:background="@drawable/savebtn"
+                android:layout_gravity="center"
+                android:text="Save!"
+                android:textColor="#ffffff"
+                android:textSize="25sp"
+                android:textAllCaps="false"
+                android:layout_marginTop="20dp"/>
+        </LinearLayout>
+
+
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

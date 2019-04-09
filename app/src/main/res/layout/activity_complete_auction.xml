@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#0f3b52"
+    android:orientation="vertical">
+
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="11dp"
+        android:visibility="gone"
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+        android:id="@+id/progressbr"/>
+
+
+    <!--heading-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:text="User Details !"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginTop="35dp"
+        android:textColor="#fff"/>
+
+    <!--side heading-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="Contact Information"
+        android:layout_marginLeft="10dp"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        android:layout_marginTop="90dp"/>
+
+
+    <!--username-->
+    <EditText
+        android:layout_width="380dp"
+        android:layout_height="35dp"
+        android:hint="Enter Username"
+        android:id="@+id/etuname"
+        android:drawableLeft="@drawable/user"
+        android:drawablePadding="10dp"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/edit_round"
+        android:layout_marginLeft="10dp"/>
+
+    <EditText
+        android:id="@+id/etaddress"
+        android:layout_width="380dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/etuname"
+        android:background="@drawable/edit_round"
+        android:drawableLeft="@drawable/home"
+        android:drawablePadding="10dp"
+        android:hint="Enter Address"
+        android:inputType="textMultiLine"
+        android:paddingLeft="10dp" />
+
+
+    <EditText
+        android:layout_width="380dp"
+        android:layout_height="35dp"
+        android:id="@+id/etmail1"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/edit_round"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/etaddress"
+        android:hint="Enter E-mail"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="10dp"
+        android:layout_marginLeft="10dp"
+        android:paddingLeft="10dp"/>
+
+
+
+    <EditText
+        android:layout_width="380dp"
+        android:layout_height="35dp"
+        android:background="@drawable/edit_round"
+        android:hint="Enter Phone Number"
+        android:inputType="phone"
+        android:drawablePadding="10dp"
+        android:id="@+id/etphone"
+        android:drawableLeft="@drawable/phone"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/etmail1"
+        android:layout_marginTop="25dp"
+        android:paddingLeft="10dp"/>
+
+    <EditText
+        android:layout_width="380dp"
+        android:layout_height="35dp"
+        android:background="@drawable/edit_round"
+        android:drawableLeft="@drawable/location"
+        android:drawablePadding="10dp"
+        android:hint="Enter State"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/etphone"
+        android:layout_marginLeft="10dp"
+        android:paddingLeft="10dp"
+        android:id="@+id/etstate"/>
+
+
+
+    <EditText
+        android:layout_width="380dp"
+        android:layout_height="35dp"
+        android:background="@drawable/edit_round"
+        android:hint="Enter City"
+        android:drawableLeft="@drawable/location"
+        android:drawablePadding="10dp"
+        android:id="@+id/etcity"
+        android:layout_below="@+id/etstate"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:paddingLeft="10dp"/>
+
+
+
+
+    <EditText
+        android:layout_width="380dp"
+        android:layout_height="35dp"
+        android:inputType="number"
+        android:drawableLeft="@drawable/pincode"
+        android:drawablePadding="10dp"
+        android:background="@drawable/edit_round"
+        android:hint="Enter Pincode"
+        android:layout_below="@+id/etcity"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:paddingLeft="10dp"
+        android:id="@+id/etpin"/>
+
+
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:id="@+id/btncontinue"
+        android:text="Continue.."
+        android:textAllCaps="false"
+        android:layout_marginTop="580dp"
+        android:textSize="22sp"
+        android:background="@drawable/loginbtn"
+        android:layout_centerHorizontal="true"/>
+
+
+
+
+
+
+</RelativeLayout>

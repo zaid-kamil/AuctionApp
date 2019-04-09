@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0f3b52"
+    tools:context=".ProfileActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Profile!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textColor="#fff"
+        android:textSize="32sp"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/edit_round"
+        android:layout_centerHorizontal="true"
+        android:hint="Username"
+        android:padding="10dp"
+        android:id="@+id/etUserName"
+        android:layout_marginTop="180dp"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/edit_round"
+        android:hint="E-mail"
+        android:padding="10dp"
+        android:id="@+id/etmail"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/etUserName"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/etphoneno"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/etmail"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edit_round"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:padding="10dp" />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:inputType="text"
+        android:background="@drawable/edit_round"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/etLocation"
+        android:layout_below="@+id/etphoneno"
+        android:layout_marginTop="20dp"
+        android:hint="Location"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/history"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/etLocation"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_round"
+        android:hint="History"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp" />
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:background="@drawable/loginbtn"
+        android:text="Edit.."
+        android:textAllCaps="false"
+        android:textSize="25sp"
+        android:id="@+id/editbtn"
+        android:layout_below="@+id/history"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true" />
+
+
+
+</RelativeLayout>

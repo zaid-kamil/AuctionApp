@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#0f3b52"
+    android:layout_gravity="center">
+
+    <!--progress bar-->
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="11dp"
+        android:visibility="gone"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:id="@+id/pBar1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textStyle="bold"
+        android:layout_marginTop="150dp"/>
+
+    <!--email-->
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:id="@+id/etemail"
+        android:hint="Enter Email"
+        android:background="@drawable/edit_round"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="10dp"
+        android:paddingLeft="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:inputType="textEmailAddress"/>
+
+    <!--password-->
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:id="@+id/etpass"
+        android:inputType="textPassword"
+        android:background="@drawable/edit_round"
+        android:drawablePadding="10dp"
+        android:paddingLeft="10dp"
+        android:drawableLeft="@drawable/password"
+        android:layout_below="@+id/etemail"
+        android:hint="Enter Password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <!--button-->
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="Login!"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:id="@+id/btnlogin"
+        android:background="@drawable/loginbtn"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etpass"
+        android:layout_marginTop="140dp"/>
+
+    <!--forgot password-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:gravity="right"
+        android:id="@+id/btnforgotpass"
+        android:onClick="forgotPassword"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="350dp"/>
+    
+    <!--create new account-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnnewac"
+        android:text="Create New Account!"
+        android:textColor="#fff"
+        android:textSize="22sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btnlogin"
+        android:layout_marginTop="20dp"
+        android:gravity="center"/>
+
+
+
+
+
+
+</RelativeLayout>
